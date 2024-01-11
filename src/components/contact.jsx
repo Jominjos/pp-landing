@@ -5,6 +5,7 @@ import React from "react";
 const initialState = {
   name: "",
   email: "",
+  phone:"",
   message: "",
 };
 export const Contact = (props) => {
@@ -20,11 +21,14 @@ export const Contact = (props) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(name, email, message);
-    
+    console.log(process.env.REACT_APP_EMAILJS_SERVICE_ID);
     // replace below with your own Service ID, Template ID and Public Key from your EmailJS account 
     
     emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_PUBLIC_KEY")
+      .sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+         e.target,
+        process.env.REACT_APP_EMAILJS_USER_ID)
       .then(
         (result) => {
           console.log(result.text);
@@ -78,6 +82,20 @@ export const Contact = (props) => {
                       <p className="help-block text-danger"></p>
                     </div>
                   </div>
+                  <div className="col-md-6">
+                    <div className="form-group">
+                      <input
+                        type="phone"
+                        id="phone"
+                        name="phone"
+                        className="form-control"
+                        placeholder="phone number"
+                        required
+                        onChange={handleChange}
+                      />
+                      <p className="help-block text-danger"></p>
+                    </div>
+                  </div>
                 </div>
                 <div className="form-group">
                   <textarea
@@ -93,7 +111,7 @@ export const Contact = (props) => {
                 </div>
                 <div id="success"></div>
                 <button type="submit" className="btn btn-custom btn-lg">
-                  Send Message
+                  Request Callback
                 </button>
               </form>
             </div>
