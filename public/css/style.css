@@ -45,6 +45,13 @@ h2 {
   font-size: 40px !important;
 } */
 
+/* Header styles */
+
+#header_heading {
+  color: white;
+}
+
+/* Default styles */
 body,
 html {
   font-family: "Open Sans", sans-serif;
