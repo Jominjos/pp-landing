@@ -17,16 +17,23 @@ export const Navigation = (props) => {
             <span className="icon-bar"></span>{" "}
             <span className="icon-bar"></span>{" "}
           </button>
-          <a id="brandName" className="navbar-brand page-scroll" href="#page-top">
-          
-
+        
+            <a href="#page-top">
+          <div id="brand__Name" className="page-scroll"  href="#page-top">
+          <img id="pp_logo" src="img/pp_logo.png" alt="logo" />
+      <h2 id="popular">
+        POPULAR
+        </h2>
+        <h3 id="properties">properties</h3>
+         </div>
             
-            POPULAR PROPERTIES
+         </a>
             
             
            
 
-          </a>{" "}
+         
+          {" "}
         </div>
 
         <div

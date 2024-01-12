@@ -13,9 +13,37 @@
   /* --c1: #6372ff;
   --c2: #608dfd; */
 }
-#brandName {
-  color: var(--tertiary-color);
+#pp_logo {
+  width: 50px;
+  height: 12%;
+  padding-right: 2px;
 }
+#brand__Name {
+  padding-right: 20px;
+  display: flex;
+  width: auto;
+  align-items: center !important;
+  justify-content: space-around !important;
+  margin: 0 !important;
+}
+#popular {
+  margin: 0;
+  color: white;
+  background-color: red;
+  width: auto;
+  padding: 10px;
+  margin-right: 2px;
+  font-weight: 2000;
+}
+#properties {
+  margin: 0;
+}
+/* #brand__Name > h3,
+h2 {
+  color: white !important;
+  background-color: red;
+  font-size: 40px !important;
+} */
 
 body,
 html {
@@ -104,7 +132,7 @@ hr {
   font-size: 24px;
   font-weight: 1000;
   color: var(--brand-color);
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 #menu.navbar-default .navbar-nav > li > a {
   font-family: "Lato", sans-serif;
