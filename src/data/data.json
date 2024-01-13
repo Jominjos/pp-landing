@@ -65,22 +65,13 @@
       "smallImage": "img/portfolio/09-small.jpg"
     }
   ],
-  "Services": [
+  "Services": [[
     {
       "icon": "fa fa-wordpress",
       "name": "Lorem ipsum dolor",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-    },
-    {
-      "icon": "fa fa-cart-arrow-down",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-    },
-    {
-      "icon": "fa fa-cloud-download",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-    }
+    }]
+    
   ],
   "Testimonials": [
     {
@@ -140,23 +131,24 @@
   "Features": [
     {
       "icon": "fa fa-comments-o",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
-    },
-    {
-      "icon": "fa fa-bullhorn",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
-    },
-    {
-      "icon": "fa fa-group",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
-    },
-    {
-      "icon": "fa fa-magic",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "title": "மிகப் பிரபலமான இடத்தில் உள்ள 7 ஏக்கர் நிலம் மற்றும் அங்கு கட்டப்பட்டுள்ள கட்டிடங்கள் விற்பனைக்கு",
+      "text": "-",
+      "img":"https://www.constructionweekonline.in/cloud/2022/05/14/CASAGRAND-Divinity-entrance_Street.jpg"
+    },{
+      "icon": "fa fa-comments-o",
+      "title": "தமிழகமெங்கும் வீடு , மனைகள் மற்றும் இடங்கள் வாங்க விற்க",
+      "text": "-",
+      "img":"https://www.bigproperty.in/wp-content/uploads/2023/06/openplot21.jpg "
+    },{
+      "icon": "fa fa-comments-o",
+      "title": "வங்கியில் அடகு வைக்கப்பட்ட உங்களது சொத்து திருப்பி தரப்படும்",
+      "text": "-",
+      "img":"https://plotson.com/wp-content/uploads/2016/04/home-image.jpg"
+    },{
+      "icon": "fa fa-comments-o",
+      "title": "வங்கியில் அடகு வைக்கப்பட்ட உங்களது சொத்து திருப்பி தரப்படும்",
+      "text": "-",
+      "img":"https://plotson.com/wp-content/uploads/2016/04/home-image.jpg"
     }
   ]
 }

@@ -223,9 +223,9 @@ hr {
 .btn-custom {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
-  color: #fff;
-  background-color: var(--c4);
-  background-image: linear-gradient(to right, var(--c3) 0%, var(--c1) 100%);
+  background-color: #eef2f6;
+  color: rgb(33, 33, 157);
+  /* background-image: linear-gradient(to right, var(--c3) 0%, var(--c1) 100%); */
   padding: 14px 34px;
   letter-spacing: 1px;
   margin: 0;

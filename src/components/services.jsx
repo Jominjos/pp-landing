@@ -1,15 +1,26 @@
 import React from "react";
 
 export const Services = (props) => {
+
+  const handleButtonClick = () => {
+    const telLink = `tel:+918667554840`;
+    window.location.href = telLink;
+  };
   return (
     <div id="services" className="text-center">
       <div className="container">
         <div className="section-title">
           <h2>Franchise</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-            dapibus leonec.
+          எங்கள் நிறுவனத்துடன் இணைந்து பணியாற்ற.
           </p>
+           <button
+                 
+                  className="btn btn-custom btn-lg page-scroll"
+                  onClick={handleButtonClick}
+                >
+                  📞Call
+                </button>{" "}
         </div>
         <div className="row">
           {props.data
