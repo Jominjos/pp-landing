@@ -321,6 +321,7 @@ header .intro-text {
 /* About Section */
 #about {
   padding: 100px 0;
+  background-color: rgb(226, 226, 226);
 }
 #about h3 {
   font-size: 22px;
