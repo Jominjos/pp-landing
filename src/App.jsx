@@ -2,16 +2,17 @@ import React, { useState, useEffect } from "react";
 import { Navigation } from "./components/navigation";
 import { Header } from "./components/header";
 import { Features } from "./components/features";
-// import { About } from "./components/about";
+import { About } from "./components/about";
 import { Services } from "./components/services";
 // import { Gallery } from "./components/gallery";
-// import { Testimonials } from "./components/testimonials";
+import { Testimonials } from "./components/testimonials";
 import { Team } from "./components/Team";
 import { Contact } from "./components/contact";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
 import "./App.css";
-import Textu from "./components/textu";
+// import Textu from "./components/textu";
+import Vision from "./components/vision";
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -29,12 +30,13 @@ const App = () => {
      
       <Navigation />
       <Header data={landingPageData.Header} />
+      <About data={landingPageData.About} />
       <Features data={landingPageData.Features} />
-      {/* <About data={landingPageData.About} /> */}
-     <Textu/>
+     {/* <Textu/> */}
       <Services data={landingPageData.Services} />
       {/* <Gallery data={landingPageData.Gallery} /> */}
-      {/* <Testimonials data={landingPageData.Testimonials} /> */}
+      <Testimonials data={landingPageData.Testimonials} />
+      <Vision  data={landingPageData.About}/>
       <Team data={landingPageData.Team} />
       <Contact data={landingPageData.Contact} />
     </div>
