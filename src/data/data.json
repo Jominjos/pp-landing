@@ -139,21 +139,14 @@
       "img": "img/team/02.jpg",
       "name": "Mike Doe",
       "job": "Senior Designer"
-    },
-    {
-      "img": "img/team/03.jpg",
-      "name": "Jane Doe",
-      "job": "Senior Designer"
-    },
-    {
-      "img": "img/team/04.jpg",
-      "name": "Karen Doe",
-      "job": "Project Manager"
     }
+   
   ],
   "Contact": {
-    "address": "4321 California St, San Francisco, CA 12345 ",
-    "phone": "+91 123 4f56 1234 , 92239 28382",
+    "address1": "5/365,Sivagamy Tower ,Thiruchandur Main Road ,Palayankottai ,Thirunelveli-627002.",
+    "address2":" 18,Vinayakar temple street,MMM Hospital backside,Mugapper,Chennai-600037.",
+    "phone1": "+91 86675 54840",
+    "phone2": "+91 73739 55503",
     "email": "info@company.com",
     "facebook": "fb.com",
     "twitter": "twitter.com",

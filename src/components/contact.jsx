@@ -1,49 +1,49 @@
-import { useState } from "react";
-import emailjs from "emailjs-com";
+// import { useState } from "react";
+// import emailjs from "emailjs-com";
 import React from "react";
 
-const initialState = {
-  name: "",
-  email: "",
-  phone:"",
-  message: "",
-};
+// const initialState = {
+//   name: "",
+//   email: "",
+//   phone:"",
+//   message: "",
+// };
 export const Contact = (props) => {
-  const [{ name, email, message }, setState] = useState(initialState);
+  // const [{ name, email, message }, setState] = useState(initialState);
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setState((prevState) => ({ ...prevState, [name]: value }));
-  };
-  const clearState = () => setState({ ...initialState });
+  // const handleChange = (e) => {
+  //   const { name, value } = e.target;
+  //   setState((prevState) => ({ ...prevState, [name]: value }));
+  // };
+  // const clearState = () => setState({ ...initialState });
   
   
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(name, email, message);
-    console.log(process.env.REACT_APP_EMAILJS_SERVICE_ID);
-    // replace below with your own Service ID, Template ID and Public Key from your EmailJS account 
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   console.log(name, email, message);
+  //   console.log(process.env.REACT_APP_EMAILJS_SERVICE_ID);
+  //   // replace below with your own Service ID, Template ID and Public Key from your EmailJS account 
     
-    emailjs
-      .sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID,
-        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-         e.target,
-        process.env.REACT_APP_EMAILJS_USER_ID)
-      .then(
-        (result) => {
-          console.log(result.text);
-          clearState();
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
+  //   emailjs
+  //     .sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID,
+  //       process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+  //        e.target,
+  //       process.env.REACT_APP_EMAILJS_USER_ID)
+  //     .then(
+  //       (result) => {
+  //         console.log(result.text);
+  //         clearState();
+  //       },
+  //       (error) => {
+  //         console.log(error.text);
+  //       }
+  //     );
+  // };
   return (
     <div>
       <div id="contact">
         <div className="container">
-          <div className="col-md-8">
+          {/* <div className="col-md-8">
             <div className="row">
               <div className="section-title">
                 <h2>Get In Touch </h2>
@@ -115,7 +115,7 @@ export const Contact = (props) => {
                 </button>
               </form>
             </div>
-          </div>
+          </div> */}
           <div className="col-md-3 col-md-offset-1 contact-info">
             <div className="contact-item">
               <h3>Contact Info</h3>
@@ -123,7 +123,23 @@ export const Contact = (props) => {
                 <span>
                   <i className="fa fa-map-marker"></i> Address
                 </span>
-                {props.data ? props.data.address : "loading"}
+                <div>
+
+                {props.data ? props.data.address1 : "loading"}
+                </div>
+                
+                
+              </p>
+              <p>
+                <span>
+                  <i className="fa fa-map-marker"></i> Address
+                </span>
+                <div>
+
+                {props.data ? props.data.address2 : "loading"}
+                </div>
+                
+                
               </p>
             </div>
             <div className="contact-item">
@@ -131,7 +147,11 @@ export const Contact = (props) => {
                 <span>
                   <i className="fa fa-phone"></i> Phone
                 </span>{" "}
-                {props.data ? props.data.phone : "loading"}
+                <div>
+
+                {props.data ? props.data.phone1 : "loading"}
+                </div>
+                {props.data ? props.data.phone2 : "loading"}
               </p>
             </div>
             <div className="contact-item">
@@ -144,7 +164,7 @@ export const Contact = (props) => {
             </div>
           </div>
           <div className="col-md-12">
-            <div className="row">
+            {/* <div className="row">
               <div className="social">
                 <ul>
                   <li>
@@ -164,7 +184,7 @@ export const Contact = (props) => {
                   </li>
                 </ul>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
