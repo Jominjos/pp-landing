@@ -8,6 +8,11 @@ import React from "react";
 //   phone:"",
 //   message: "",
 // };
+const handleButtonClick = (number) => {
+  const telLink = "tel:" + number;
+  console.log(telLink);
+  window.location.href = telLink;
+};
 export const Contact = (props) => {
   // const [{ name, email, message }, setState] = useState(initialState);
 
@@ -136,16 +141,69 @@ export const Contact = (props) => {
                 <span>
                   <i className="fa fa-phone"></i> Phone
                 </span>{" "}
-                <div>{props.data ? props.data.phone1 : "loading"}</div>
-                {props.data ? props.data.phone2 : "loading"}
+                <div>
+                  {props.data ? props.data.phone1 : "loading"}
+                  {"     "}
+                  <button
+                    className="   page-scroll"
+                    style={{
+                      fontSize: "10px",
+                      padding: "5px 10px",
+                      borderRadius: "15px",
+                      backgroundColor: "#ffffff",
+                      color: "#000000",
+                      border: "1px solid #007bff",
+                    }}
+                    onClick={() => handleButtonClick(props.data.phone1)}
+                  >
+                    📞 CALL
+                  </button>
+                </div>
+                <div>{""}</div>
+                <span></span>
+                <div>
+                  {props.data ? props.data.phone2 : "loading"}
+                  {"     "}
+                  <button
+                    className="   page-scroll"
+                    style={{
+                      fontSize: "10px",
+                      padding: "5px 10px",
+                      borderRadius: "15px",
+                      backgroundColor: "#ffffff",
+                      color: "#000000",
+                      border: "1px solid #007bff",
+                    }}
+                    onClick={() => handleButtonClick(props.data.phone2)}
+                  >
+                    📞 CALL
+                  </button>
+                </div>
               </p>
             </div>
             <div className="contact-item">
               <p>
                 <span>
-                  <i className="fa fa-phone"></i>Franchise Phone
+                  <i className="fa fa-phone"></i>For Franchise
                 </span>{" "}
-                <div>{props.data ? props.data.phone3 : "loading"}</div>
+                <div>
+                  {props.data ? props.data.phone3 : "loading"}
+                  {"  "}
+                  <button
+                    className="   page-scroll"
+                    style={{
+                      fontSize: "10px",
+                      padding: "5px 10px",
+                      borderRadius: "15px",
+                      backgroundColor: "#ffffff",
+                      color: "#000000",
+                      border: "1px solid #007bff",
+                    }}
+                    onClick={() => handleButtonClick(props.data.phone3)}
+                  >
+                    📞 CALL
+                  </button>
+                </div>
               </p>
             </div>
 
