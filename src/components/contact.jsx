@@ -16,14 +16,13 @@ export const Contact = (props) => {
   //   setState((prevState) => ({ ...prevState, [name]: value }));
   // };
   // const clearState = () => setState({ ...initialState });
-  
-  
+
   // const handleSubmit = (e) => {
   //   e.preventDefault();
   //   console.log(name, email, message);
   //   console.log(process.env.REACT_APP_EMAILJS_SERVICE_ID);
-  //   // replace below with your own Service ID, Template ID and Public Key from your EmailJS account 
-    
+  //   // replace below with your own Service ID, Template ID and Public Key from your EmailJS account
+
   //   emailjs
   //     .sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID,
   //       process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
@@ -123,23 +122,13 @@ export const Contact = (props) => {
                 <span>
                   <i className="fa fa-map-marker"></i> Address
                 </span>
-                <div>
-
-                {props.data ? props.data.address1 : "loading"}
-                </div>
-                
-                
+                <div>{props.data ? props.data.address1 : "loading"}</div>
               </p>
               <p>
                 <span>
                   <i className="fa fa-map-marker"></i> Address
                 </span>
-                <div>
-
-                {props.data ? props.data.address2 : "loading"}
-                </div>
-                
-                
+                <div>{props.data ? props.data.address2 : "loading"}</div>
               </p>
             </div>
             <div className="contact-item">
@@ -147,13 +136,19 @@ export const Contact = (props) => {
                 <span>
                   <i className="fa fa-phone"></i> Phone
                 </span>{" "}
-                <div>
-
-                {props.data ? props.data.phone1 : "loading"}
-                </div>
+                <div>{props.data ? props.data.phone1 : "loading"}</div>
                 {props.data ? props.data.phone2 : "loading"}
               </p>
             </div>
+            <div className="contact-item">
+              <p>
+                <span>
+                  <i className="fa fa-phone"></i>Franchise Phone
+                </span>{" "}
+                <div>{props.data ? props.data.phone3 : "loading"}</div>
+              </p>
+            </div>
+
             {/* <div className="contact-item">
               <p>
                 <span>
@@ -190,9 +185,7 @@ export const Contact = (props) => {
       </div>
       <div id="footer">
         <div className="container text-center">
-          <p>
-            &copy; 2023 all rights reserved popular properties.
-          </p>
+          <p>&copy; 2023 all rights reserved popular properties.</p>
         </div>
       </div>
     </div>

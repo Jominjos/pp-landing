@@ -65,13 +65,14 @@
       "smallImage": "img/portfolio/09-small.jpg"
     }
   ],
-  "Services": [[
-    {
-      "icon": "fa fa-wordpress",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-    }]
-    
+  "Services": [
+    [
+      {
+        "icon": "fa fa-wordpress",
+        "name": "Lorem ipsum dolor",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      }
+    ]
   ],
   "Testimonials": [
     {
@@ -107,22 +108,19 @@
   ],
   "Team": [
     {
-      "img": "img/team/01.jpg",
-      "name": "John Doe",
-      "job": "Director"
-    },
-    {
-      "img": "img/team/02.jpg",
-      "name": "Mike Doe",
-      "job": "C E O"
+      "img": "img/team/popular_v_muthiah.jpg",
+      "name": "Popular V Muthiah",
+      "job": "Founder & Managing Director",
+      "about": "Born in a village near Tirunelveli, boasts over 30 years of extensive experience in the real estate industry. Having successfully completed numerous projects across Tamil Nadu, their expertise is a testament to our commitment to excellence.      "
     }
-   
   ],
   "Contact": {
     "address1": "5/365,Sivagamy Tower ,Thiruchandur Main Road ,Palayankottai ,Thirunelveli-627002.",
-    "address2":" 18,Vinayakar temple street,MMM Hospital backside,Mugapper,Chennai-600037.",
+    "address2": " 18,Vinayakar temple street,MMM Hospital backside,Mugapper,Chennai-600037.",
     "phone1": "+91 86675 54840",
     "phone2": "+91 73739 55503",
+    "phone3": "+91 73733 79510",
+
     "email": "info@company.com",
     "facebook": "fb.com",
     "twitter": "twitter.com",
@@ -131,25 +129,27 @@
   "Features": [
     {
       "icon": "fa fa-comments-o",
-      "title": "மிகப் பிரபலமான இடத்தில் உள்ள 7 ஏக்கர் நிலம் மற்றும் அங்கு கட்டப்பட்டுள்ள கட்டிடங்கள் விற்பனைக்கு",
+      "title": "Buy and Sell with just a click away!",
       "text": "-",
-      "img":"https://www.constructionweekonline.in/cloud/2022/05/14/CASAGRAND-Divinity-entrance_Street.jpg"
-    },{
-      "icon": "fa fa-comments-o",
-      "title": "தமிழகமெங்கும் வீடு , மனைகள் மற்றும் இடங்கள் வாங்க விற்க",
-      "text": "-",
-      "img":"https://www.bigproperty.in/wp-content/uploads/2023/06/openplot21.jpg "
-    },{
-      "icon": "fa fa-comments-o",
-      "title": "வங்கியில் அடகு வைக்கப்பட்ட உங்களது சொத்து திருப்பி தரப்படும்",
-      "text": "-",
-      "img":"https://plotson.com/wp-content/uploads/2016/04/home-image.jpg"
+      "img": "https://www.constructionweekonline.in/cloud/2022/05/14/CASAGRAND-Divinity-entrance_Street.jpg"
     },
     {
       "icon": "fa fa-comments-o",
-      "title": "வீட்டு மனைகளாக பிரித்து ஆறு மாதத்தில் உத்திரவாதத்துடன் லாபம் பெறலாம்",
+      "title": "தமிழகமெங்கும் வீடு , மனைகள் மற்றும் இடங்கள் வாங்க விற்க",
       "text": "-",
-      "img":"https://www.livemint.com/lm-img/img/2023/10/13/600x338/Borrowers-can-take-loans-from-moneylenders-using-t_1683283036417_1697199203468.jpg"
+      "img": "https://www.bigproperty.in/wp-content/uploads/2023/06/openplot21.jpg "
+    },
+    {
+      "icon": "fa fa-comments-o",
+      "title": "வங்கியில் அடகு வைக்கப்பட்ட உங்களது சொத்து திருப்பி தரப்படும்",
+      "text": "-",
+      "img": "https://plotson.com/wp-content/uploads/2016/04/home-image.jpg"
+    },
+    {
+      "icon": "fa fa-comments-o",
+      "title": "Earn monthly with one time investing in popular franchise",
+      "text": "-",
+      "img": "https://www.livemint.com/lm-img/img/2023/10/13/600x338/Borrowers-can-take-loans-from-moneylenders-using-t_1683283036417_1697199203468.jpg"
     }
   ]
 }

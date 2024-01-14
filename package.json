@@ -1,5 +1,5 @@
 {
-  "name": "landingpage-react-template",
+  "name": "joshua",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -31,5 +31,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Jominjos/pp-landing.git",
+  "author": "Joshua <joshua5102003@gmail.com>",
+  "license": "MIT"
 }
